@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity2">
+
+
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nome caminhoneiro"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/endereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Endereço"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/cep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="CEP"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/fone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Fone"
+        android:inputType="phone" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Tipo de transporte"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <RadioButton
+            android:id="@+id/alimento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alimentos" />
+
+        <RadioButton
+            android:id="@+id/construcao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Materiais de construção" />
+
+        <RadioButton
+            android:id="@+id/encomenda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Encomenda" />
+
+        <Button
+            android:id="@+id/imprimir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="imprimirCliente"
+            android:text="cadastrar" />
+
+
+    </RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/voltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="voltarTela"
+        android:text="VOLTAR" />
+</LinearLayout>
